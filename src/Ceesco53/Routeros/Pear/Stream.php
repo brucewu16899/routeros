@@ -138,6 +138,9 @@ class Stream
         return $this->isBlocking;
     }
 
+    /**
+     * @param boolean $block
+     */
     public function setIsBlocking($block)
     {
         $block = (bool)$block;
@@ -166,7 +169,7 @@ class Stream
      * Sets the size of a stream's buffer.
      *
      * @param int    $size      The desired size of the buffer, in bytes.
-     * @param string $direction The buffer of which direction to set. Valid
+     * @param integer $direction The buffer of which direction to set. Valid
      *     values are the DIRECTION_* constants.
      *
      * @return bool TRUE on success, FALSE on failure.
@@ -193,7 +196,7 @@ class Stream
      * allows you to set the size of each chunk. The default is 0xFFFFF.
      *
      * @param int    $size      The desired size of the chunk, in bytes.
-     * @param string $direction The chunk of which direction to set. Valid
+     * @param integer $direction The chunk of which direction to set. Valid
      *     values are the DIRECTION_* constants.
      *
      * @return bool TRUE on success, FALSE on failure.
@@ -220,7 +223,7 @@ class Stream
     /**
      * Gets the size of the chunk.
      *
-     * @param string $direction The chunk of which direction to get. Valid
+     * @param integer $direction The chunk of which direction to get. Valid
      *     values are the DIRECTION_* constants.
      *
      * @return int|array The chunk size in bytes, or an array of chunk sizes
@@ -429,7 +432,7 @@ class Stream
     /**
      * Checks whether there is data to be read from the wrapped stream.
      *
-     * @param int|null $timeout_s  If theere isn't data awaiting currently,
+     * @param integer $timeout_s  If theere isn't data awaiting currently,
      *     wait for it this many seconds for data to arrive. If NULL is
      *     specified, wait indefinetly for that.
      * @param int      $timeout_us Microseconds to add to the waiting time.
@@ -459,7 +462,7 @@ class Stream
     /**
      * Checks whether the wrapped stream can be written to without a block.
      *
-     * @param int|null $timeout_s  If the stream isn't currently accepting data,
+     * @param integer $timeout_s  If the stream isn't currently accepting data,
      *     wait for it this many seconds to start accepting data. If NULL is
      *     specified, wait indefinetly for that.
      * @param int      $timeout_us Microseconds to add to the waiting time.

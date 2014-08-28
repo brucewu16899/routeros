@@ -50,7 +50,7 @@ class UnexpectedValueException extends \UnexpectedValueException
      * @param int       $code     The Exception code.
      * @param Exception $previous The previous exception used for the exception
      *     chaining.
-     * @param mixed     $value    The unexpected value.
+     * @param string     $value    The unexpected value.
      */
     public function __construct(
         $message,

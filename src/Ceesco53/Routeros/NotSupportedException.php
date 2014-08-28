@@ -48,7 +48,7 @@ class NotSupportedException extends \Exception implements Exception
      * @param int        $code     The Exception code.
      * @param \Exception $previous The previous exception used for the exception
      *     chaining.
-     * @param mixed      $value    The unsupported value.
+     * @param integer      $value    The unsupported value.
      */
     public function __construct(
         $message,
