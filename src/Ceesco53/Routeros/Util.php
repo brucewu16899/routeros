@@ -625,7 +625,6 @@ class Util
      *     current menu. The data about each entry is specified as an array with
      *     the names of each property as an array key, and the value as an array
      *     value.
-     * @param array $...    Additional entries.
      * 
      * @return string A comma separated list of the new entries' IDs.
      */

@@ -32,7 +32,7 @@ use PEAR2\Net\Transmitter\Stream as S;
 /**
  * Refers to the cryptography constants.
  */
-use PEAR2\Net\Transmitter\NetworkStream AS N;
+use PEAR2\Net\Transmitter\NetworkStream as N;
 
 /**
  * A RouterOS client.
@@ -105,7 +105,7 @@ class Client
      * @param string   $host     Hostname (IP or domain) of the RouterOS server.
      * @param string   $username The RouterOS username.
      * @param string   $password The RouterOS password.
-     * @param int|null $port     The port on which the RouterOS server provides
+     * @param integer $port     The port on which the RouterOS server provides
      *     the API service. You can also specify NULL, in which case the port
      *     will automatically be chosen between 8728 and 8729, depending on the
      *     value of $crypto.

@@ -89,7 +89,7 @@ abstract class Message
     /**
      * Sanitizes a value of an argument (message or query one).
      * 
-     * @param mixed $value The value to sanitize.
+     * @param string $value The value to sanitize.
      * 
      * @return string The sanitized value.
      */

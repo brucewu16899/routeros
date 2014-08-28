@@ -136,7 +136,7 @@ abstract class NetworkStream extends Stream
      * Sets the size of a stream's buffer.
      *
      * @param int    $size      The desired size of the buffer, in bytes.
-     * @param string $direction The buffer of which direction to set. Valid
+     * @param integer $direction The buffer of which direction to set. Valid
      *     values are the DIRECTION_* constants.
      *
      * @return bool TRUE on success, FALSE on failure.
@@ -157,7 +157,7 @@ abstract class NetworkStream extends Stream
      *
      * Shutdowns (partially or not) a full-duplex connection.
      *
-     * @param string $direction The direction for which to disable further
+     * @param integer $direction The direction for which to disable further
      *     communications.
      *
      * @return bool TRUE on success, FALSE on failure.
