@@ -5,25 +5,25 @@ Packages are the primary way of adding functionality to Laravel.
 
 This is a wrapper of http://pear2.github.io/Net_RouterOS/
 
-## installing
+## Installing
 
 Laravel 4.*:
 
-Open composer.json
+  Open composer.json
   
-Add something like this to the repositories section:
+  Add something like this to the repositories section:
   
-```json
-  "repositories": [
-      {
-        "type":"git",
-        "url":"https://github.com/Ceesco53/routeros"
-      }
-  ]
-```
+  ```json
+    "repositories": [
+        {
+          "type":"git",
+          "url":"https://github.com/Ceesco53/routeros"
+        }
+    ]
+  ```
     
-Add this to the require section:
-
-```json
-    "ceesco53/routeros": "dev-master"
-```
+  Add this to the require section:
+  
+  ```json
+      "ceesco53/routeros": "dev-master"
+  ```
