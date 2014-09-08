@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,7 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
+
 
 /**
  * Refers to transmitter direction constants.
@@ -40,8 +37,7 @@ use Exception as E;
  * @license  http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
-class Response extends Message
-{
+class Response extends Message {
     
     /**
      * The last response for a request.

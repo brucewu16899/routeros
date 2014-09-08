@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,13 +16,8 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
 
-//use Ceesco53\Routeros\Pear\NetworkStream;
-//use Ceesco53\Routeros\Pear\Stream;
+
 include_once __DIR__ . '/Pear/NetworkStream.php';
 include_once __DIR__ . '/Pear/Stream.php';
 
@@ -47,8 +42,7 @@ use PEAR2\Net\Transmitter\NetworkStream as N;
  * @license  http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
-class Client
-{
+class Client {
     /**
      * Used in {@link isRequestActive()} to limit search only to requests
      * that have a callback.

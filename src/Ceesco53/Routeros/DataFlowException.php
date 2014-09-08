@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,7 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
+
 
 /**
  * Exception thrown when the request/response cycle goes an unexpected way.
@@ -30,8 +27,7 @@ namespace Ceesco53\Routeros;
  * @license  http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
-class DataFlowException extends \RuntimeException implements Exception
-{
+class DataFlowException extends \RuntimeException implements Exception {
     const CODE_INVALID_CREDENTIALS = 10000;
     const CODE_TAG_REQUIRED = 10500;
     const CODE_TAG_UNIQUE = 10501;

@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,7 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
+
 
 /**
  * Represents a collection of RouterOS responses.
@@ -30,8 +27,7 @@ namespace Ceesco53\Routeros;
  * @license  http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
-class ResponseCollection implements \ArrayAccess, \SeekableIterator, \Countable
-{
+class ResponseCollection implements \ArrayAccess, \SeekableIterator, \Countable {
     
     /**
      * @var array An array with all {@link Response} objects.

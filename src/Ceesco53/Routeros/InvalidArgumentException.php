@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,6 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
 
 /**
  * Exception thrown when there's something wrong with message arguments.
@@ -31,8 +27,7 @@ namespace Ceesco53\Routeros;
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
 class InvalidArgumentException extends \InvalidArgumentException
-    implements Exception
-{
+    implements Exception {
     const CODE_SEEKABLE_REQUIRED = 1100;
     const CODE_NAME_INVALID = 20100;
     const CODE_ABSOLUTE_REQUIRED = 40200;

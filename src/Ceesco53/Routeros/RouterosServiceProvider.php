@@ -1,6 +1,4 @@
-<?php
-
-namespace Ceesco53\Routeros;
+<?php namespace Ceesco53\Routeros;
 
 use Illuminate\Support\ServiceProvider;
 

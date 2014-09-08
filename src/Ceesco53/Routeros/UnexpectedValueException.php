@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,7 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
+
 
 /**
  * Exception thrown when encountering an invalid value in a function argument.
@@ -31,8 +28,7 @@ namespace Ceesco53\Routeros;
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
 class UnexpectedValueException extends \UnexpectedValueException
-    implements Exception
-{
+    implements Exception {
     
     const CODE_CALLBACK_INVALID = 10502;
     const CODE_ACTION_UNKNOWN = 30100;

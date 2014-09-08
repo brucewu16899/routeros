@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,7 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
+
 
 /**
  * Exception thrown when encountering something not supported by RouterOS or
@@ -31,8 +28,7 @@ namespace Ceesco53\Routeros;
  * @license  http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
-class NotSupportedException extends \Exception implements Exception
-{
+class NotSupportedException extends \Exception implements Exception {
 
     const CODE_CONTROL_BYTE = 1601;
 

@@ -1,6 +1,4 @@
-<?php
-
-namespace Ceesco53\Routeros\Facades;
+<?php namespace Ceesco53\Routeros\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,4 +1,4 @@
-<?php
+<?php namespace PEAR2\Net\Transmitter;
 
 /**
  * Wrapper for network stream functionality.
@@ -18,10 +18,7 @@ This package abstracts this away, so that when you want to get exactly N amount 
  * @version   1.0.0a4
  * @link      http://pear2.php.net/PEAR2_Net_Transmitter
  */
-/**
- * The namespace declaration.
- */
-namespace PEAR2\Net\Transmitter;
+
 
 /**
  * Generic exception class of this package.

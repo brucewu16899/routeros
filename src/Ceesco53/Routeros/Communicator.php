@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,8 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
+
+
 
 /**
  * Using transmitters.
@@ -42,8 +40,7 @@ include_once __DIR__ . '/Pear/TcpClient.php';
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  * @see      Client
  */
-class Communicator
-{
+class Communicator {
     /**
      * Used when getting/setting all (default) charsets.
      */

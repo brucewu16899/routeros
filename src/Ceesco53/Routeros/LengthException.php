@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ceesco53\Routeros;
 
 /**
  * RouterOS API client implementation.
@@ -16,10 +16,7 @@
  * @version   1.0.0b4
  * @link      http://pear2.php.net/PEAR2_Net_RouterOS
  */
-/**
- * The namespace declaration.
- */
-namespace Ceesco53\Routeros;
+
 
 /**
  * Exception thrown when there is a problem with a word's length.
@@ -30,8 +27,7 @@ namespace Ceesco53\Routeros;
  * @license  http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  * @link     http://pear2.php.net/PEAR2_Net_RouterOS
  */
-class LengthException extends \LengthException implements Exception
-{
+class LengthException extends \LengthException implements Exception {
     
     const CODE_UNSUPPORTED = 1200;
     const CODE_INVALID = 1300;

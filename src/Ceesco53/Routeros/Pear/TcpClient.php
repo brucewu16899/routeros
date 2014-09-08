@@ -1,4 +1,4 @@
-<?php
+<?php namespace PEAR2\Net\Transmitter;
 
 /**
  * Wrapper for network stream functionality.
@@ -18,10 +18,7 @@ This package abstracts this away, so that when you want to get exactly N amount 
  * @version   1.0.0a4
  * @link      http://pear2.php.net/PEAR2_Net_Transmitter
  */
-/**
- * The namespace declaration.
- */
-namespace PEAR2\Net\Transmitter;
+
 include_once __DIR__ .'/SocketException.php';
 /**
  * Used for managing persistent connections.
@@ -46,8 +43,7 @@ use Exception as E;
  * @license  http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  * @link     http://pear2.php.net/PEAR2_Net_Transmitter
  */
-class TcpClient extends NetworkStream
-{
+class TcpClient extends NetworkStream {
 
     /**
      * @var int The error code of the last error on the socket.
