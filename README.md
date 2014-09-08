@@ -27,3 +27,7 @@ Laravel 4.*:
 ```json
     "ceesco53/routeros": "dev-master"
 ```
+
+## License
+
+ - LGPL (http://www.gnu.org/licenses/lgpl.html) 
