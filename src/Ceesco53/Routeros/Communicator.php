@@ -25,7 +25,7 @@ namespace Ceesco53\Routeros;
  * Using transmitters.
  */
 use PEAR2\Net\Transmitter as T;
-require_once('Pear\TcpClient.php');
+include_once __DIR__ . '/Pear/TcpClient.php';
 /**
  * A RouterOS communicator.
  * 

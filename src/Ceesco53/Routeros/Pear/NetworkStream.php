@@ -22,7 +22,7 @@ This package abstracts this away, so that when you want to get exactly N amount 
  * The namespace declaration.
  */
 namespace PEAR2\Net\Transmitter;
-require_once('Pear\Stream.php');
+include_once __DIR__ . '/Stream.php';
 /**
  * A network transmitter.
  *

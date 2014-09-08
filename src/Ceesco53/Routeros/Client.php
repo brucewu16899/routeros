@@ -21,8 +21,10 @@
  */
 namespace Ceesco53\Routeros;
 
-require_once('Pear\NetworkStream.php');
-require_once('Pear\Stream.php');
+//use Ceesco53\Routeros\Pear\NetworkStream;
+//use Ceesco53\Routeros\Pear\Stream;
+include_once __DIR__ . '/Pear/NetworkStream.php';
+include_once __DIR__ . '/Pear/Stream.php';
 
 /**
  * Refers to transmitter direction constants.
