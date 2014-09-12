@@ -228,7 +228,7 @@ class Client {
                 return $result;
             }
             return self::_login($com, $username, $password, $timeout);
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             if ($com->getTransmitter()->isPersistent() && null !== $old) {
                 $com->getTransmitter()->lock($old, true);
             }

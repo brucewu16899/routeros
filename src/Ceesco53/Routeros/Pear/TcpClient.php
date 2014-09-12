@@ -173,7 +173,7 @@ class TcpClient extends NetworkStream {
 
     private static function _handleError($level, $message)
     {
-        throw new SocketException($message, 0);
+        throw new \Exception($message, 0);
     }
 
     /**
